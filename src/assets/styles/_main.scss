@@ -1,12 +1,80 @@
 .main {
-  height: 50vh;
+  height: 55vh;
   background-image: url("assets/main-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   &__info {
+    color: #fff;
+
     &--title {
-      margin: 0;
+      font-size: 3rem;
+      padding-top: 10rem;
+    }
+
+    &--sub {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    &--search {
+      width: 40%;
+      position: relative;
+
+      button {
+        position: absolute;
+        background: none;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0.8rem 1rem;
+        border: 0;
+        color: #ec5252;
+
+        &:hover {
+          background-color: #ec5252;
+          color: #fff;
+        }
+
+        i {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  &__banner {
+    display: flex;
+    align-items: center;
+    height: 85px;
+    background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+
+    &--container {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+    }
+
+    &--info {
+      display: flex;
+      align-items: center;
+
+      color: #fff;
+
+      i {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+        font-weight: 600;
+      }
     }
   }
 }
