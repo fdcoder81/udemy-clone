@@ -1,0 +1,16 @@
+@import "./assets/styles/navbar";
+@import "./assets/styles/main";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.43;
+  color: #29303b;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,12 @@
+.main {
+  height: 50vh;
+  background-image: url("assets/main-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__info {
+    &--title {
+      margin: 0;
+    }
+  }
+}
