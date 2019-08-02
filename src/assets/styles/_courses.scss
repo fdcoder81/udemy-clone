@@ -1,5 +1,6 @@
 .courses {
   padding-top: 2rem;
+  padding-bottom: 2rem;
 
   &__container {
     display: flex;
@@ -29,26 +30,42 @@
     padding-left: 1rem;
 
     &--menu {
-      ul {
-        display: flex;
-        list-style: none;
-
-        li {
-          padding: 0 1rem 1rem;
-        }
+      p {
+        font-size: 1.2rem;
+        padding: 0 1rem 1rem;
       }
     }
 
     &--slider {
       display: flex;
+      position: relative;
+
+      .slider-icon {
+        color: blue;
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        right: -2%;
+      }
 
       &-card {
         margin-right: 0.8rem;
         border: 1px solid #f7f8fa;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         height: 100%;
+        transition: 0.3s;
+
+        &:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+          img {
+            opacity: 0.8;
+          }
+        }
 
         img {
           width: 100%;
+          border-bottom: 1px solid #f7f8fa;
         }
       }
 
@@ -65,7 +82,7 @@
       .reviews {
         padding-top: 1rem;
 
-        i {
+        .fa-star {
           color: orange;
           font-size: 0.6rem;
         }
@@ -76,7 +93,7 @@
 
         p {
           text-align: right;
-          padding-top: 1rem;
+          padding: 1rem 0.5rem;
           font-size: 1.2rem;
           font-weight: 600;
         }
