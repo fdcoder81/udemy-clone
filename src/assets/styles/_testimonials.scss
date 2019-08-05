@@ -1,6 +1,7 @@
 .testimonials {
   background: #f7f8fa;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
 
   &__icon-left {
     position: absolute;
@@ -32,6 +33,7 @@
   &__box {
     background: #fff;
     margin-right: 1rem;
+    flex: 1;
   }
 
   &__avatar {
@@ -55,5 +57,45 @@
     padding: 0 2rem 2rem 2rem;
     font-size: 1.1rem;
     font-weight: 400;
+  }
+
+  &__banner {
+    display: flex;
+    padding-top: 4rem;
+
+    &--box {
+      padding: 3rem;
+      text-align: center;
+
+      &:first-child {
+        border-right: 1px solid lightgray;
+      }
+
+      &-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      &-text {
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 0.5rem 0 1.5rem;
+        letter-spacing: 1.2px;
+      }
+
+      button {
+        padding: 0.8rem;
+        border: 0;
+        color: #fff;
+        background: #ec5252;
+        font-size: 1.1rem;
+        font-weight: 600;
+
+        &:hover {
+          background: #992337;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
