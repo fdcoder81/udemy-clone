@@ -18,7 +18,38 @@
     flex: 1 1;
 
     &--dropdown {
-      display: flex;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        .navbar__left--dropdown-content {
+          display: block;
+        }
+      }
+
+      &-content {
+        display: none;
+        position: absolute;
+        background: #fff;
+        width: 200px;
+
+        ul {
+          padding-top: 2rem;
+          list-style: none;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          li {
+            padding: 0.5rem 0 0.5rem 1rem;
+
+            &:hover {
+              background: #a1a7b3;
+              cursor: pointer;
+            }
+          }
+        }
+      }
     }
 
     &--icon {
@@ -88,12 +119,22 @@
       background: #fff;
       color: #686f7a;
       border: 1px solid;
+      cursor: pointer;
+
+      &:hover {
+        color: #000;
+      }
     }
 
     &--sign-button {
       background: #ec5252;
       color: #fff;
       border: 1px solid #ec5252;
+      cursor: pointer;
+
+      &:hover {
+        background: #992337;
+      }
     }
   }
 }

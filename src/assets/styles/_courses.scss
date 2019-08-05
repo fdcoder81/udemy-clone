@@ -2,6 +2,10 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 
+  .hidden {
+    display: none;
+  }
+
   &__container {
     display: flex;
   }
@@ -46,6 +50,11 @@
         position: absolute;
         top: 50%;
         right: -2%;
+        cursor: pointer;
+
+        &:hover {
+          color: lightblue;
+        }
       }
 
       .slider-icon-left {
@@ -55,14 +64,23 @@
         top: 50%;
         right: 98%;
         display: none;
+        cursor: pointer;
+        &:hover {
+          color: lightblue;
+        }
       }
 
       &-card {
         margin-right: 0.8rem;
         border: 1px solid #f7f8fa;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
         transition: 0.3s;
+
+        img {
+          display: block;
+        }
 
         &:hover {
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -80,7 +98,7 @@
       }
 
       &-text {
-        padding: 0.2rem;
+        margin-top: 1rem;
         text-align: center;
 
         p:first-child {
