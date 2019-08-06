@@ -5,7 +5,10 @@
   }
 }
 
-@media (max-width: 1281px) {
+@media (max-width: 1600px) {
+  .courses__info {
+    display: none;
+  }
 }
 
 @media (max-width: 1090px) {
@@ -35,13 +38,71 @@
   .navbar__logo img {
     width: 150px;
   }
+
+  .courses__list--menu p {
+    text-align: center;
+  }
+
+  .courses__list--slider {
+    flex-wrap: wrap;
+
+    &-card {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .slider-icon-right,
+  .slider-icon-left {
+    display: none;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .main {
+    text-align: center;
+
+    .main__info--search {
+      margin: 0 auto;
+      width: 70%;
+    }
+
+    &__banner {
+      &--info {
+        i {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          padding-left: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 767px) {
+  .main__banner--info i {
+    display: none;
+  }
+  .main__banner {
+    display: none;
+  }
+
+  .testimonials h3 {
+    text-align: center;
+  }
+
+  .testimonials__banner--box:first-child {
+    border: none;
+  }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
+  .main {
+    .main__info--search {
+      width: 90%;
+    }
+  }
 }

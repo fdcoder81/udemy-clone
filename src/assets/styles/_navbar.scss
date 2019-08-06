@@ -8,10 +8,46 @@
   align-items: center;
   justify-content: center;
   height: 5rem;
+  position: relative;
+
+  .hidden {
+    display: none;
+  }
 
   .toggle {
     display: none;
-    font-size: 2rem;
+
+    &__container {
+      cursor: pointer;
+    }
+
+    &__icon {
+      font-size: 2rem;
+
+      &-close {
+        font-size: 2rem;
+      }
+    }
+
+    &__content {
+      position: absolute;
+      top: 100%;
+      background: #fff;
+
+      ul {
+        list-style: none;
+        width: 100%;
+
+        li {
+          padding: 0.5rem;
+
+          &:hover {
+            background: #a1a7b3;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 
   &__logo {

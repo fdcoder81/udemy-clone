@@ -9,7 +9,22 @@
     <header>
       <div class="wrapper">
         <nav class="navbar">
-          <i class="fas fa-bars toggle"></i>
+          <div class="toggle">
+            <div class="toggle__container">
+              <i class="fas fa-bars toggle__icon"></i>
+              <span class="toggle__icon-close hidden">X</span>
+            </div>
+            <div class="toggle__content hidden">
+              <ul>
+                <li>LOG IN</li>
+                <li>SIGN UP</li>
+                <li>Development</li>
+                <li>Business</li>
+                <li>IT and Software</li>
+                <li>Design</li>
+              </ul>
+            </div>
+          </div>
           <div class="navbar__logo">
             <img src="./assets/images/logo.png" alt="" />
           </div>
@@ -315,11 +330,8 @@
     <div class="testimonials">
       <div class="wrapper">
         <h3>What our students have to say</h3>
-        <div class="testimonials__container">
-          <div class="testimonials__icon-left">
-            <i class="fas fa-chevron-circle-left"></i>
-          </div>
 
+        <div class="testimonials__container">
           <div class="testimonials__box">
             <div class="testimonials__avatar">
               <img
@@ -366,9 +378,6 @@
               instructors are so fun and knowledgeable. I only wish we found it
               sooner.
             </p>
-          </div>
-          <div class="testimonials__icon-right">
-            <i class="fas fa-chevron-circle-right"></i>
           </div>
         </div>
 

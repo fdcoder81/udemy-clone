@@ -3,23 +3,6 @@
   padding-bottom: 2rem;
   border-bottom: 1px solid lightgray;
 
-  &__icon-left {
-    position: absolute;
-    color: lightgrey;
-    font-size: 3rem;
-    top: 40%;
-    left: -2%;
-    display: none;
-  }
-
-  &__icon-right {
-    position: absolute;
-    color: lightgrey;
-    font-size: 3rem;
-    top: 40%;
-    right: -1%;
-  }
-
   h3 {
     padding: 2rem 0 2rem;
     font-size: 1.5rem;
@@ -27,13 +10,17 @@
 
   &__container {
     display: flex;
-    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__box {
     background: #fff;
     margin-right: 1rem;
+    margin-top: 0.5rem;
     flex: 1;
+    min-width: 250px;
+    max-width: 430px;
   }
 
   &__avatar {
@@ -61,15 +48,14 @@
 
   &__banner {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 4rem;
 
     &--box {
+      flex: 1;
       padding: 3rem;
       text-align: center;
-
-      &:first-child {
-        border-right: 1px solid lightgray;
-      }
+      min-width: 450px;
 
       &-title {
         font-size: 1.4rem;
