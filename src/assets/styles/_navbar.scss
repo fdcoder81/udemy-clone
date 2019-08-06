@@ -1,9 +1,18 @@
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 5rem;
 
-  height: 65px;
+  .toggle {
+    display: none;
+    font-size: 2rem;
+  }
 
   &__logo {
     padding-right: 2rem;
@@ -19,6 +28,7 @@
 
     &--dropdown {
       position: relative;
+      flex-basis: 180px;
       cursor: pointer;
 
       &:hover {
@@ -97,10 +107,18 @@
     align-items: center;
 
     &--link {
+      display: none;
       color: #505763;
-      padding-right: 2rem;
       font-size: 0.85rem;
+      padding: 0.8rem;
       font-weight: 300;
+      margin-right: 2rem;
+
+      &:hover {
+        background: #f7f8fa;
+        cursor: pointer;
+        border: 1px solid #dddedf;
+      }
     }
 
     i {

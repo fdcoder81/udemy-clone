@@ -2,7 +2,8 @@
 @import "./assets/styles/main";
 @import "./assets/styles/courses";
 @import "./assets/styles/testimonials";
-@import "./assets/styles/_footer";
+@import "./assets/styles/footer";
+@import "./assets/styles/media";
 
 * {
   box-sizing: border-box;
@@ -18,9 +19,4 @@ body {
   background-color: #fff;
   margin: 0;
   padding: 0;
-}
-
-.wrapper {
-  width: 70%;
-  margin: 0 auto;
 }

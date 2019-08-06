@@ -63,7 +63,6 @@
         position: absolute;
         top: 50%;
         right: 98%;
-        display: none;
         cursor: pointer;
         &:hover {
           color: lightblue;
@@ -76,11 +75,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         max-height: 100%;
         max-width: 100%;
-        transition: 0.3s;
-
-        img {
-          display: block;
-        }
+        transition: all 0.3s ease-out;
 
         &:hover {
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -92,7 +87,8 @@
         }
 
         img {
-          width: 100%;
+          width: 216px;
+          height: 122px;
           border-bottom: 1px solid #f7f8fa;
         }
       }
@@ -104,6 +100,7 @@
         p:first-child {
           font-weight: 600;
           padding-bottom: 0.8rem;
+          height: 50px;
         }
       }
 
