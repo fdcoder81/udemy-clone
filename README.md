@@ -1,10 +1,10 @@
 # UDEMY CLONE
 
-### Built with HTML, CSS (SCSS) AND JavaScript
+### Built with HTML, CSS (SCSS) and JavaScript
 
-### NO FRAMEWORKS / LIBRARIES
+#### NO FRAMEWORKS / LIBRARIES
 
-### RESPONSIVE WEB DESIGN
+#### RESPONSIVE WEB DESIGN
 
 I built the Udemy main page (front end) from scratch without Bootstrapt or any other frameworks.
 I customized it a bit
